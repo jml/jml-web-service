@@ -1,0 +1,51 @@
+name: jml-web-service
+version: 0.1.0
+synopsis: Common utilities for running a web service
+description: |
+  This is a personal set of helper functions used to create a web API service.
+
+  We assume that the service is intended to run in a container on a Kubernetes
+  cluster, but it\'s likely that these routines would be useful for other
+  services.
+
+  We provide command-line options for use with optparse-applicative,
+  Prometheus instrumentation, and some basic logging.
+maintainer: Jonathan M. Lange <jml@mumak.net>
+license: Apache-2.0
+github: jml/jml-web-service
+category: Web
+
+ghc-options: -Wall
+default-extensions:
+  - NoImplicitPrelude
+  - OverloadedStrings
+  - RecordWildCards
+  - TypeApplications
+
+dependencies:
+  - base >= 4.10 && < 5
+  - protolude >= 0.2
+
+library:
+  source-dirs: src
+  dependencies:
+    - bytestring
+    - clock
+    - data-default
+    - http-types
+    - monad-logger
+    - optparse-applicative
+    - prometheus-client
+    - prometheus-metrics-ghc
+    - text
+    - wai
+    - wai-extra
+    - warp
+
+tests:
+  tasty:
+    main: Tasty.hs
+    source-dirs: tests
+    dependencies:
+      - jml-web-service
+      - tasty
