@@ -2,7 +2,7 @@
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 0f7bfdc2822d6aca068e78b916e2694cc5f71c5bdfd2e86abaef7c1edac90844
+-- hash: e2504fada6ca4f008ad498c8cf66046cc31d7921f598816aa852ce3dcd35672c
 
 name:           jml-web-service
 version:        0.1.0
@@ -51,6 +51,8 @@ library
       JmlSvc
       JmlSvc.Instrument
       JmlSvc.Logging
+      JmlSvc.Metrics
+      JmlSvc.Web
   other-modules:
       Paths_jml_web_service
   default-language: Haskell2010
