@@ -2,7 +2,7 @@
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: e2504fada6ca4f008ad498c8cf66046cc31d7921f598816aa852ce3dcd35672c
+-- hash: 797d81a87d712077af6ca7831011f5a91155ba63ac6309462407444c50a25e2b
 
 name:           jml-web-service
 version:        0.1.0
@@ -20,6 +20,7 @@ homepage:       https://github.com/jml/jml-web-service#readme
 bug-reports:    https://github.com/jml/jml-web-service/issues
 maintainer:     Jonathan M. Lange <jml@mumak.net>
 license:        Apache-2.0
+license-file:   LICENSE
 build-type:     Simple
 cabal-version:  >= 1.10
 
