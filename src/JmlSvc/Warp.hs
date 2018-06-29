@@ -1,4 +1,4 @@
-module JmlSvc.Web
+module JmlSvc.Warp
   ( Config(..)
   , AccessLogLevel
   , flags
