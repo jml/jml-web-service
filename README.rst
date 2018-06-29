@@ -1,3 +1,6 @@
+.. image:: https://circleci.com/gh/jml/jml-web-service/tree/master.svg?style=svg
+    :target: https://circleci.com/gh/jml/jml-web-service/tree/master
+
 This is a personal set of helper functions used to create a web API service.
 
 We assume that the service is intended to run in a container on a Kubernetes
