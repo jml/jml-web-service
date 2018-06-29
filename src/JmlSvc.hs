@@ -6,6 +6,7 @@ module JmlSvc
 
 import Protolude
 
+import Control.Monad.Logger
 import qualified Network.Wai as Wai
 import qualified Options.Applicative as Options
 
@@ -30,3 +31,4 @@ run appName Config {..} app =
   Logging.run loggingConfig $ do
     prometheus <- Metrics.prometheus appName metricsConfig
     Web.run webConfig (prometheus app)
+    logInfoN $ appName <> " terminated successfully"
